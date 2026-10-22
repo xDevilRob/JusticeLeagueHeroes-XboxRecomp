@@ -1,4 +1,4 @@
-param([string]$Version='0.1.0-rc1')
+param([string]$Version='0.1.0-rc1', [string]$GameExecutable='host/run/JusticeLeagueHeroes.exe')
 $ErrorActionPreference='Stop'
 if($Version -notmatch '^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?$'){throw 'Invalid version.'}
 $root=Split-Path $PSScriptRoot -Parent
@@ -6,7 +6,8 @@ $destination=Join-Path $root ('dist/JusticeLeagueHeroes-'+$Version+'-'+(Get-Date
 if(Test-Path $destination){throw 'Package already exists.'}
 New-Item -ItemType Directory -Path (Join-Path $destination 'host/run') | Out-Null
 Copy-Item (Join-Path $root 'gamelauncher.exe') $destination
-Copy-Item (Join-Path $root 'host/run/JusticeLeagueHeroes.exe') (Join-Path $destination 'host/run')
+$game=if([IO.Path]::IsPathRooted($GameExecutable)){$GameExecutable}else{Join-Path $root $GameExecutable}
+Copy-Item $game (Join-Path $destination 'host/run/JusticeLeagueHeroes.exe')
 Copy-Item (Join-Path $root 'patches') $destination -Recurse
 New-Item -ItemType Directory -Path (Join-Path $destination 'notices') | Out-Null
 Copy-Item (Join-Path $root 'sdk/LICENSE') (Join-Path $destination 'notices/SDK-LICENSE.txt')

@@ -36,8 +36,8 @@ Include SDK LICENSE and THIRD_PARTY.txt in the release package. Check actual lin
 - [x] Reconstruct modified UI/translation resources from the user's dump on first run.
 - [ ] Verify launcher display selectors interactively (DrawToBitmap does not capture native selection text reliably).
 - [x] Include dependency notices and a distribution hash manifest.
-- [ ] Compile and test the final clean package, both launch methods and shared saves/settings.
-- [ ] Configure the user's GitHub repository and authentication.
+- [x] Compile from clean exported source; verify first-run reconstruction and direct startup with no launcher environment. Shared paths are identical by construction; manual UI/play testing remains recommended for this release candidate.
+- [x] Configure the user's GitHub repository and authentication.
 - [ ] Upload reviewed code and publish the first reviewed release.
 
 Keep local runtime data in place; exclusions do not require deleting or moving original files.

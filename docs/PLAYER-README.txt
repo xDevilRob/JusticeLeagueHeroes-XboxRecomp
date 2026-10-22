@@ -9,7 +9,8 @@ Justice League Heroes - Windows recompilation - release candidate
 5. Select resolution and screen mode, click Apply, then Play.
 
 Supported default.xbe SHA-1: c94d34f77bfaa0b879bd5d53e3c62fb6b7bdef98
-Required: Windows x64, DirectX 12-capable graphics and .NET Framework 4.x.
+Required: Windows x64, DirectX 12-capable graphics, .NET Framework 4.x
+and Microsoft Visual C++ 2015-2022 Redistributable (x64).
 Keep all package folders together. Do not move or modify your original dump.
 
 After the initial dump selection you can open

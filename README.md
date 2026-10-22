@@ -4,6 +4,12 @@ Unofficial native Windows recompilation. The local build has been played through
 
 This project uses XboxXBERecomp by TGP482, with local runtime and game-specific changes. Preserve the notices in `sdk/LICENSE` and `sdk/THIRD_PARTY.txt`.
 
+## Playing
+
+Download the Windows ZIP from [Releases](https://github.com/xDevilRob/JusticeLeagueHeroes-XboxRecomp/releases), extract it, open `gamelauncher.exe`, and select your matching extracted dump in Settings. See [player instructions](docs/PLAYER-README.txt). The automatic GitHub source-code ZIP is not the ready-to-play package.
+
+Runtime requirements: Windows x64, DirectX 12 graphics, .NET Framework 4.x, and Microsoft Visual C++ 2015-2022 Redistributable (x64). No prerequisites are installed automatically.
+
 ## Current features
 
 - Native Direct3D 12 rendering and XAudio2 audio.
