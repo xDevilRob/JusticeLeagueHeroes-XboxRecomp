@@ -1,6 +1,6 @@
 # First release review
 
-Status: first release candidate preparation.
+Status: [v0.1.0-rc1](https://github.com/xDevilRob/JusticeLeagueHeroes-XboxRecomp/releases/tag/v0.1.0-rc1) published as a pre-release on 2026-10-22.
 
 ## Source inclusion
 
@@ -38,6 +38,6 @@ Include SDK LICENSE and THIRD_PARTY.txt in the release package. Check actual lin
 - [x] Include dependency notices and a distribution hash manifest.
 - [x] Compile from clean exported source; verify first-run reconstruction and direct startup with no launcher environment. Shared paths are identical by construction; manual UI/play testing remains recommended for this release candidate.
 - [x] Configure the user's GitHub repository and authentication.
-- [ ] Upload reviewed code and publish the first reviewed release.
+- [x] Upload 150 reviewed source files and publish v0.1.0-rc1 with ZIP and SHA256SUMS.txt.
 
 Keep local runtime data in place; exclusions do not require deleting or moving original files.
